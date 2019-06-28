@@ -29,7 +29,7 @@ Dentro del campo de la Inteligencia Artificial se han intentado crear modelos ma
 
 </div>
 
-<center> ![inteligenciaArtificial](/media/4inteligenciaArtificial.png) </center>
+<center> ![inteligenciaArtificial](/images/blog/4inteligenciaArtificial.png) </center>
 
 
 ### ¿Qué es una neurona artificial?
@@ -42,7 +42,7 @@ Dentro del campo de la Inteligencia Artificial son métodos de aprendizaje autó
 
 ### Neurona vs Perceptrón
 
-![comparacion](/media/1pvsnn.png)
+![comparacion](/images/blog/1pvsnn.png)
 
 ### Antecedentes históricos
 
@@ -60,7 +60,7 @@ Una neurona biológica es una célula nerviosa eléctricamente excitables e inte
 
 </div>
 
-![neuronaBiologica](/media/2neurona.png)
+![neuronaBiologica](/images/blog/2neurona.png)
 
 <div class=text-justify>
 
@@ -84,7 +84,7 @@ Las entradas del perecptrón actúan como las dendritas o señales de entrada ha
 
 </div>
 
-![perceptron](/media/3perceptron.png)
+![perceptron](/images/blog/3perceptron.png)
 
 ### ¿Entonces qué es una red neuronal?
 
@@ -94,11 +94,11 @@ Entonces una red neuronal se compone de un conjunto de perceptrones interconecta
 
 </div>
 
-![redNeuronal](/media/RedNeuronal.png)
+![redNeuronal](/images/blog/RedNeuronal.png)
 
 ### Elementos de un perceptrón
 
-![perceptronE](/media/PerceptronE.png)
+![perceptronE](/images/blog/PerceptronE.png)
 
 <div class=text-justify>
 
