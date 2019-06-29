@@ -92,7 +92,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-  - LICENCE
+  - LICENSE
   - vendor
 
 # -----------
