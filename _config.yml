@@ -69,6 +69,14 @@ defaults:
     values:
       full_width: true
 
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+highlighter: rouge
+
 jekyll-archives:
   enabled:
     - categories
