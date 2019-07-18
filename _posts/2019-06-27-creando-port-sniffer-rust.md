@@ -88,4 +88,28 @@ fn main() {
 }
 ```
 
+Por ahora dejemos la función `main` sola y en la parte superior del archivo
+importaremos el namespace `env` de la biblioteca estándar de la siguiente
+forma:
 
+```rust
+use std::env;
+```
+Dicho namespace nos permitirá trabajar con los argumentos de nuestro programa y
+utilizarlos para nuestro beneficio, veamos este punto un poco más a fondo,
+dentro de main coloca la siguiente línea de código:
+
+```rust
+let args: Vec<String>;
+```
+
+Con esto estamos creando una variable `args` la cual es un vector de cadenas
+(`String`), pero sola no hace nada, de hecho no sirve de nada, necesita
+ un valor, dicho valot será:
+
+```rust
+let args: Vec<String> = env::args().collect();
+```
+
+Con ello nuestro namespace `env` *recogerá* todos los argumentos que se ingresen
+en la línea de comandos.
