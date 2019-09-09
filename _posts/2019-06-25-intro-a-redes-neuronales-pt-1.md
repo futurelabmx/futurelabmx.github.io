@@ -11,21 +11,11 @@ author_staff_member: 01-ulises
 
 ## Introducción a las Redes Neuronales
 
-## Contenido
-- Introducción
-- ¿Qué es una neurona artificial?
-- Antecedentes historicos
-- Semejanzas entre una neurona biológica y un perceptrón
-- ¿Qué es una red neuronal?
-- Elementos de un perceptrón
-- Ejemplo del funcionamiento de un perceptrón
-- Referencias
-
 ### Introducción
 
 Dentro del campo de la Inteligencia Artificial se han intentado crear modelos matemáticos que se aproximen a los modelos biológicos con el objetivo de que una computadora pueda imitar los procesos de los seres vivos para resolver distintas tareas de manera automática. Prueba de ello son las redes neuronales artificiales (conjunto de neuronas interconectadas entre si) que actualmente imitan el proceso de aprendizaje que pueden generar cuando trabajan en conjunto.
 
-![inteligenciaArtificial](/images/blog/4inteligenciaArtificial.png)
+![image1](/images/blog/0artificialInteligence.png)
 
 ### ¿Qué es una neurona artificial?
 
@@ -33,7 +23,7 @@ Dentro del campo de la Inteligencia Artificial son métodos de aprendizaje autó
 
 ### Neurona vs Perceptrón
 
-![comparacion](/images/blog/1pvsnn.png)
+![image2](/images/blog/1neuralBneuralC.png)
 
 ### Antecedentes históricos
 
@@ -43,7 +33,7 @@ Un perceptrón es un modelo matemático que representa la aproximación de un mo
 
 Una neurona biológica es una célula nerviosa eléctricamente excitables e interconectadas dentro del cerebro que procesan y transmiten información a través de señales eléctricas y químicas. Estas neuronas están conectadas entre sí para formar una red neuronal en el cerebro. Una neurona se compone de tres partes: cuerpo celular, las dendritas y el axón.
 
-![neuronaBiologica](/images/blog/2neurona.png)
+![image3](/images/blog/2neural.png)
 
 - Cuerpo Celular (Soma): Tiene como función principal sintetizar la mayoría de las proteínas que se encuentran en la neurona.
 - Núcleo: Contiene el material genético en forma de cromosomas
@@ -59,17 +49,17 @@ Cuando el potencial de acción alcanza la terminación del axón, causa diminuta
 En 1943 McCulloch & Pitts inspirandos en la neurona biológica desarrollarón un modelo artificial de una neurona. Esta idea fue retomada más tarde por Rosenblatt quien creó una estructura llamada perceptrón. El perceptrón es una estructura la cual poseé una o varias entradas, una función de activación y una salida. Es la aproximación más cercana a una neurona biológica.
 Las entradas del perecptrón actúan como las dendritas o señales de entrada hacia la neurona. La función de activación realiza el papel del soma que decide en que momento disparar esa señal eléctrica y la salida modela al axón que al activarse envía información hacia las neuronas con las que se conecta.
 
-![perceptron](/images/blog/3perceptron.png)
+![image4](/images/blog/3perceptron.png)
 
 ### ¿Entonces qué es una red neuronal?
 
 Entonces una red neuronal se compone de un conjunto de perceptrones interconectados entre si, generando así una red, la cual su estructura puede volverse tan compleja como nosotros lo deseemos. La estructura más sencilla se comforma de tres capas, una capa de entrada, una capa oculta y una capa de salida.
 
-![redNeuronal](/images/blog/RedNeuronal.png)
+![image5](/images/blog/4NeuralNet.png)
 
 ### Elementos de un perceptrón
 
-![perceptronE](/images/blog/PerceptronE.png)
+![image6](/images/blog/5modelPerceptron.png)
 
 1. Señales de entrada: El perceptrón recibe de la realidad o de otra neurona que le antecede ciertas señales de entrada, en la mayoria de los casos se trabaja con valores de entrada booleanos.
 La señal de entrada llamada bias es un valor de sesgo que permite cambiar  o disparar la función de activación hacia la izq. o der. para garantizar un aprendizaje exitoso.
@@ -100,13 +90,13 @@ La compuerta lógica AND realiza un producto booleano dadas dos entradas, la con
 3. Se realiza la suma ponderada de las entradas por los pesos:
 
       suma = ((0X0.3)+(0X0.7)) + (1X0.5)
-      
+
       suma = 0.5
 
 4. Función de activación:
 
       1 si suma+bias >= 0
-      
+
       0 si suma+bias <= 0
 
 Para nuestro caso obtuvimos una suma de 0.5 (de acuerdo con la condición de la función de activación) nuestra salida es 0
@@ -122,13 +112,13 @@ Para nuestro caso obtuvimos una suma de 0.5 (de acuerdo con la condición de la 
 3. Se realiza la suma ponderada de las entradas por los pesos:
 
       suma = ((0X0.5)+(1X0.1)) + (1X0.9)
-      
+
       suma = 1
 
 4. Función de activación:
 
       1 si suma+bias >= 0
-      
+
       0 si suma+bias <= 0
 
 Para nuestro caso obtuvimos una suma de 1 (de acuerdo con la condición de la función de activación) nuestra salida es 1
@@ -142,13 +132,13 @@ Para nuestro caso obtuvimos una suma de 1 (de acuerdo con la condición de la fu
 3. Se realiza la suma ponderada de las entradas por los pesos:
 
       suma = ((0X0.1)+(1X0.1)) + (1X0.5)
-      
+
       suma = 0.6
 
 4. Función de activación:
 
       1 si suma+bias >= 0
-      
+
       0 si suma+bias <= 0
 
 Para nuestro caso obtuvimos una suma de 0.6 (de acuerdo con la condición de la función de activación) entonces nuestra salida es 0
