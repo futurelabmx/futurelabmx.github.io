@@ -15,7 +15,7 @@ author_staff_member: 01-ulises
 
 Dentro del campo de la Inteligencia Artificial se han intentado crear modelos matemáticos que se aproximen a los modelos biológicos con el objetivo de que una computadora pueda imitar los procesos de los seres vivos para resolver distintas tareas de manera automática. Prueba de ello son las redes neuronales artificiales (conjunto de neuronas interconectadas entre si) que actualmente imitan el proceso de aprendizaje que pueden generar cuando trabajan en conjunto.
 
-![image1](/images/blog/ArtificialInteligence.png)
+![image1](/images/blog/0artificialInteligence.png)
 
 ### ¿Qué es una neurona artificial?
 
@@ -23,7 +23,7 @@ Dentro del campo de la Inteligencia Artificial son métodos de aprendizaje autó
 
 ### Neurona vs Perceptrón
 
-![image2](/images/blog/1pvsnn.png)
+![image2](/images/blog/1neuralBneuralC.png)
 
 ### Antecedentes históricos
 
@@ -33,7 +33,7 @@ Un perceptrón es un modelo matemático que representa la aproximación de un mo
 
 Una neurona biológica es una célula nerviosa eléctricamente excitables e interconectadas dentro del cerebro que procesan y transmiten información a través de señales eléctricas y químicas. Estas neuronas están conectadas entre sí para formar una red neuronal en el cerebro. Una neurona se compone de tres partes: cuerpo celular, las dendritas y el axón.
 
-![image3](/images/blog/2neuron.png)
+![image3](/images/blog/2neural.png)
 
 - Cuerpo Celular (Soma): Tiene como función principal sintetizar la mayoría de las proteínas que se encuentran en la neurona.
 - Núcleo: Contiene el material genético en forma de cromosomas
@@ -55,11 +55,11 @@ Las entradas del perecptrón actúan como las dendritas o señales de entrada ha
 
 Entonces una red neuronal se compone de un conjunto de perceptrones interconectados entre si, generando así una red, la cual su estructura puede volverse tan compleja como nosotros lo deseemos. La estructura más sencilla se comforma de tres capas, una capa de entrada, una capa oculta y una capa de salida.
 
-![image5](/images/blog/NeuralNet.png)
+![image5](/images/blog/4NeuralNet.png)
 
 ### Elementos de un perceptrón
 
-![image6](/images/blog/perceptronE.png)
+![image6](/images/blog/5modelPerceptron.png)
 
 1. Señales de entrada: El perceptrón recibe de la realidad o de otra neurona que le antecede ciertas señales de entrada, en la mayoria de los casos se trabaja con valores de entrada booleanos.
 La señal de entrada llamada bias es un valor de sesgo que permite cambiar  o disparar la función de activación hacia la izq. o der. para garantizar un aprendizaje exitoso.

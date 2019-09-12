@@ -23,7 +23,7 @@ Retomames el modelo del perceptrón y el ejemplo de la compuerta lógica AND, do
 
 ###### Modelo de un perceptrón
 
-![image1](/images/blog/perceptronE.png)
+![image1](/images/blog/5modelPerceptron.png)
 
 ###### Compuerta Lógica AND
 
@@ -54,7 +54,7 @@ Dentro de los procesos del modelo del perceptrón encontramos
 Siguiendo los procesos del modelo del perceptrón iremos programando nuestro perceptrón en python
 
 ###### Estructura del proyecto python
-![image2](/images/blog/ProjectStructure.png)
+![image2](/images/blog/6StructureProject.png)
 
 #### Paso 1: Definición de las entradas del perceptrón que es una matriz de entradas más el valor **bias**
 
@@ -126,7 +126,7 @@ for input,weight, output in zip(self.inputs, weights, self.outputs):
 Para realiza la suma ponderada utilizamos el operador **@** que nos permite realizar la sumatoria de las entradas por los pesos
 
 
-![image3](/images/blog/plusWeighted.png)
+![image3](/images/blog/7plusWeighted.png)
 
 
 #### Paso 4: Función de activación:
@@ -147,11 +147,11 @@ else:
    num_inputs = 0
 ```
 
-![image5](/images/blog/OutputComparation.png)
+![image4](/images/blog/8outputComparation.png)
 
 ## Ejecución
 En esta ejecución el perceptrón se tardo 5 épocas en aprender las entradas y encontrar los mejores pesos
-![image6](/images/blog/Execution.png)
+![image5](/images/blog/10Execution.png)
 
 ###### Link del repositorio: https://github.com/ugarciac/PerceptronPython
 
