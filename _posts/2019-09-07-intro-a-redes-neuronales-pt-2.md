@@ -14,18 +14,18 @@ author_staff_member: 01-ulises
 - Python 3.6
 - numpy
 
-### Introducción
+## Introducción
 En el post anterior de "[Introducción a las Redes Neuronales Pt. 1](https://futurelab.mx/redes%20neuronales/inteligencia%20artificial/2019/06/25/intro-a-redes-neuronales-pt-1/)" explicamos los conceptos básicos que conforman al mundo de las redes neuronales, donde partimos del modelo de un perceptrón que es la parte fundamental y la unión de estos forman una red neuronal.
 
 Para este segundo post haremos la implementación del perceptrón en el lenguaje de programación Python en su versión 3.6.8 utilizando el paradigma de programación orientado a objetos.
 
 Retomames el modelo del perceptrón y el ejemplo de la compuerta lógica AND, donde obtenemos verdaero (1) si los dos casos de entrada son verdaderos (1).
 
-###### Modelo de un perceptrón
+### Modelo de un perceptrón
 
 ![image1](/images/blog/5modelPerceptron.png)
 
-###### Compuerta Lógica AND
+### Compuerta Lógica AND
 
                             | Entrada A| Entrada B | Salida |
                             | ---------|-----------| -------|
@@ -37,7 +37,7 @@ Retomames el modelo del perceptrón y el ejemplo de la compuerta lógica AND, do
 
 
 
-> ### A programar!
+> # A programar!
 
 Dentro de los procesos del modelo del perceptrón encontramos
 
@@ -53,12 +53,13 @@ Dentro de los procesos del modelo del perceptrón encontramos
 
 Siguiendo los procesos del modelo del perceptrón iremos programando nuestro perceptrón en python
 
-###### Estructura del proyecto python
+### Estructura del proyecto python
+
 ![image2](/images/blog/6StructureProject.png)
 
-#### Paso 1: Definición de las entradas del perceptrón que es una matriz de entradas más el valor **bias**
+## Paso 1: Definición de las entradas del perceptrón que es una matriz de entradas más el valor **bias**
 
-###### archivo main.py
+### archivo main.py
 ```python
 if __name__ == '__main__':
 
@@ -75,7 +76,7 @@ Definimos las salidas
     outputs = [0,0,0,1]
 ```
 
-###### archivo Perceptron.py
+### archivo Perceptron.py
 
 ```python
 import numpy as np
@@ -95,7 +96,7 @@ Enseguida creamos la clase Perceptron el cual recibira la matriz de entrada y el
 
 Ahora crearemos un método nombrado Fit (se refiere al entrenamiento de nuestro perceptrón). Primero definimos dos variables: epocas y num_inputs, el número de épocas indica el tiempo en épocas que se tardo el perceptrón en aprender las entradas encontrando los mejores pesos, y para el caso de num_inputs es una variable de control que sirve para detener el ciclo **while**, esta condición se cumple cuando el numero de salidas esperadas sea igual al número de salidas obtenidas.
 
-###### Método Fit
+### Método Fit
 
 ```python
 def Fit(self):
@@ -105,14 +106,14 @@ def Fit(self):
         print('-------------------- epochs {} -------------------- '.format(epochs))
 ```
 
-#### Paso 2: Generación de pesos aleatorios en el rango [-1,1].
+## Paso 2: Generación de pesos aleatorios en el rango [-1,1].
 
 ```python
 # se generan pesos aleatorios en el rango [-1,1]
 weights = np.array(np.random.uniform(-1, 1, self.inputs.shape))
 ```
 
-####  Paso 3: Unión sumatoria o suma ponderada de las entradas por los pesos.
+## Paso 3: Unión sumatoria o suma ponderada de las entradas por los pesos.
 
 Recorremos la matriz de entradas, la matriz de pesos y el vector de salidas. La función **zip** nos permite recorrer multiples estructuras en una sola corrida.
 
@@ -125,11 +126,10 @@ for input,weight, output in zip(self.inputs, weights, self.outputs):
 
 Para realiza la suma ponderada utilizamos el operador **@** que nos permite realizar la sumatoria de las entradas por los pesos
 
-
 ![image3](/images/blog/7plusWeighted.png)
 
 
-#### Paso 4: Función de activación:
+## Paso 4: Función de activación:
 El funcionamiento de la función de activación es que si el resultado de la suma ponderada es menor a 0 la salida resultante es 0 y si el resultado de la suma ponderada es mayor a 0 entonces la salida resultante es 1
 
 ```python
@@ -138,7 +138,7 @@ y_generate = 0 if y_generate < 0 else 1
 
 ```
 
-#### Paso 5 Salida: Comparación de salidas obtenidas con salidas esperadas
+## Paso 5 Salida: Comparación de salidas obtenidas con salidas esperadas
 
 ```python
 if y_generate == output:
@@ -153,8 +153,9 @@ else:
 En esta ejecución el perceptrón se tardo 5 épocas en aprender las entradas y encontrar los mejores pesos
 ![image5](/images/blog/10Execution.png)
 
-###### Link del repositorio: https://github.com/ugarciac/PerceptronPython
+[Link del repositorio:] (https://github.com/ugarciac/PerceptronPython)
 
-### Dudas, Comentarios, Críticas constructivas
+
+## Dudas, Comentarios, Críticas constructivas
 Twitter: [@ugarciacal](https://twitter.com/ugarciacal)
 Facebook: [UlisesGC](https://www.facebook.com/ulises.garciac)
