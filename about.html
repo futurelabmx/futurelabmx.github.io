@@ -15,21 +15,18 @@ description: Tenemos el interés de <strong>crear</strong> para <strong>mejorar<
 			</div>
 		</div>
 	</section>
-	
+
 	<section class="page">
 		<div class="container {% if page.full_width %}max-container{% endif %}">
 				<h2>Nuestro equipo</h2>
-				<p class="subtext">Somos una comunidad llena de perfiles multidisciplinarios <strong>en Guanajuato y todo México</strong>.</p>
+				<p class="subtext"><strong>Coordinadores</strong></p>
 				<p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_staff_members/" class="btn"><strong>&#9998;</strong> Manage Staff members</a></p>
 				<ul class="staff">
-					{% for person in site.staff_members %}
-						<li>
-							<div class="square-image"><img src="{% include relative-src.html src=person.image_path %}" alt="{{ person.name }}"/></div>
-							<div class="name"><a target="_blank" href="{{ person.social }}">{{ person.name }}</a></div>
-							<div class="position">{{ person.position }}</div>
-							<div class="blurb">{{ person.blurb }}</div>
-						</li>
-					{% endfor %}
+					<iframe class="airtable-embed" src="https://airtable.com/embed/shr2iaVOS7sLkjrRf?backgroundColor=red" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+				</ul>
+				<p class="subtext"><strong>Miembros</strong></p>
+				<ul class="staff">
+					<iframe class="airtable-embed" src="https://airtable.com/embed/shrvqe1C7HBYD7uVJ?backgroundColor=red" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
 				</ul>
 		</div>
 	</section>
