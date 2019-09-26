@@ -1,5 +1,5 @@
 ---
-name: Lalo
+name: Lalo Padrón
 position: 💻 Coordinador
 image_path: /images/members/lalo.jpg
 social: https://www.instagram.com/lalo.cura/
