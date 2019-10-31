@@ -30,6 +30,9 @@ map:
 	</form> -->
 
 	<div class="contact-details">
+	<div class="bubu-qr">
+		<img src="/images/qr_contact.png">
+	</div>
 		<h3 class="editable">Dirección</h3>
 		<address><a target="_blank" href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}">{{ page.map.address | replace: ", ", ", <br>" }}</a></address>
 
@@ -39,7 +42,10 @@ map:
     <h3 class="editable">Facebook</h3>
 		<p><a href="https://www.facebook.com/f.lab.mx/">https://www.facebook.com/f.lab.mx/</a></p>
 	</div>
+
 </div>
+
+
 
 <script type="text/javascript">
 	window.mapData = {{ page.map | jsonify }};

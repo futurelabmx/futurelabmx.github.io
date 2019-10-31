@@ -4,11 +4,14 @@
 	height: 400px;
 }
 
+
 .contact-box {
 	@extend %flexbox;
 	@include flex-flow(wrap);
 	max-width: 750px;
 	margin: 0 auto;
+
+	// background: lightblue;
 
 	form {
 		width: 100%
@@ -23,10 +26,20 @@
 			-webkit-flex: 1;
 			flex: 1;
 		}
+
+
 		margin: 0 30px;
 	}
 
 	.contact-details {
+		float: left;
 		font-size: .9em;
 	}
+}
+
+.bubu-qr img {
+	width: 30%;
+	float: right; 
+	display: inline;
+	margin:10px 0;
 }
