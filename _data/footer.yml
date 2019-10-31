@@ -20,20 +20,20 @@
 #   - name: Status
 #     link: /
 #     new_window: true
-# - links:
-#   - name: Facebook
-#     link: https://www.facebook.com/f.lab.mx/
-#     new_window: true
-#     social_icon: Facebook
-#   - name: Twitter
-#     link: https://twitter.com
-#     social_icon: Twitter
-#     new_window: true
-#   - name: YouTube
-#     link: https://youtube.com
-#     social_icon: YouTube
-#     new_window: true
-#   - name: RSS
-#     link: /feed.xml
-#     social_icon: RSS
-#     new_window: false
+ - links:
+   - name: Facebook
+     link: https://www.facebook.com/f.lab.mx/
+     new_window: true
+     social_icon: Facebook
+   - name: Twitter
+     link: https://twitter.com/futurelabmx
+     social_icon: Twitter
+     new_window: true
+   - name: Instagram
+     link: https://www.instagram.com/futurelabmx/
+     social_icon: Instagram
+     new_window: true
+   - name: GitHub
+     link: https://github.com/futurelabmx
+     social_icon: GitHub
+     new_window: true
