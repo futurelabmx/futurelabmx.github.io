@@ -4,6 +4,7 @@ gem "jekyll", ">= 3.7.4"
 gem "ffi", ">= 1.9.24"
 gem 'jekyll-admin', group: :jekyll_plugins
 gem 'rouge', '~> 3.5', '>= 3.5.1'
+gem 'tzinfo-data'
 
 group :jekyll_plugins do
   gem 'jekyll-archives', '2.1.1'

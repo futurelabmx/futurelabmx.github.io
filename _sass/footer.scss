@@ -2,6 +2,7 @@
 	width: 100%;
 	margin: 10px;
 	padding: 0;
+	text-align: center;
 
 	@media #{$tablet} {
 		-webkit-flex: 1 0 180px;
@@ -11,6 +12,7 @@
 	li {
 		list-style: none;
 		margin: 15px auto;
+		display: inline;
 
 		@media #{$tablet} {
 			max-width: 150px;

@@ -23,6 +23,8 @@
 			</div>
 		</header>
 		{{ content }}
+
+
 		<footer>
 			<div class="container">
 				<p class="editor-link"><a href="cloudcannon:collections/_data/footer.yml" class="btn"><strong>&#9998;</strong> Edit footer</a></p>
@@ -30,11 +32,10 @@
 					{% for column in site.data.footer %}
 					<ul class="footer-links">
 						{% for link in column.links %}
-							<li><a {% if link.new_window %}target="_blank"{% endif %} href="{% include relative-src.html src=link.link %}" {% if link.social_icon %}class="{{ link.social_icon }}-icon"{% endif %}>
+							<li class="bubu_style_li"><a {% if link.new_window %}target="_blank"{% endif %} href="{% include relative-src.html src=link.link %}" {% if link.social_icon %}class="{{ link.social_icon }}-icon"{% endif %}>
 								{% if link.social_icon %}
 									{% include social-icon.html icon=link.social_icon %}
-								{% endif %}
-								{{ link.name }}</a></li>
+								{% endif %}</a></li>
 						{% endfor %}
 					</ul>
 					{% endfor %}
@@ -46,6 +47,8 @@
 				</center>
 			</div>
 		</footer>
+
+
 		<!-- Chatfuel plugin-->
 		<script>
 		  var div = document.createElement('div');
