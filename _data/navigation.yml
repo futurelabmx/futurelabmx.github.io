@@ -15,8 +15,8 @@
   new_window: false
   highlight: false
 - name: Blog
-  link: /blog/
-  new_window: false
+  link: https://medium.com/future-lab
+  new_window: true
   highlight: false
 - name: Contacto
   link: /contact/
